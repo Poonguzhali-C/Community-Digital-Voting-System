@@ -1,0 +1,6 @@
+@echo off
+echo Starting backend (http://127.0.0.1:8000 , Swagger: http://127.0.0.1:8000/docs)...
+start "Backend" cmd /k "cd /d %~dp0backend && call env\Scripts\activate && python main.py"
+echo Starting frontend (http://localhost:5173)...
+cd /d %~dp0frontend
+call npm start
