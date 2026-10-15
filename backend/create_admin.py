@@ -1,4 +1,4 @@
-"""Create or promote an ADMIN user:  python create_admin.py <username> <password>"""
+
 import sys
 
 from app.database import SessionLocal

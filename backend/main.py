@@ -1,4 +1,4 @@
-"""Entry point: `python main.py` starts the API on http://127.0.0.1:8000 (Swagger at /docs)."""
+
 import uvicorn
 
 if __name__ == "__main__":

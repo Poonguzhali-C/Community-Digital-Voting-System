@@ -1,4 +1,4 @@
-"""Business logic shared by the routers (kept out of the route functions)."""
+
 from typing import Optional
 
 from fastapi import HTTPException, status

@@ -7,7 +7,6 @@ def vote(client, pid, choice, headers):
     return client.post(f"/proposals/{pid}/vote", json={"vote": choice}, headers=headers)
 
 
-# ---------- auth ----------
 def test_register_login_me_logout(client):
     r = client.post("/auth/register", json={"username": "alice", "password": "Secret123"})
     assert r.status_code == 201 and r.json()["role"] == "USER"

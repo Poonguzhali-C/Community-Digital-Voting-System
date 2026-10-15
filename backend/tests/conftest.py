@@ -1,7 +1,7 @@
 import os
 
 # Must be set BEFORE the app is imported so tests never touch voting.db
-os.environ["DATABASE_URL"] = "sqlite://"
+os.environ["DATABASE_URL"] = "sqlite://voting.db"
 os.environ["SECRET_KEY"] = "test-secret-key"
 
 import pytest
